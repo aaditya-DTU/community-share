@@ -1,0 +1,69 @@
+# ===========================
+# OS Generated Files
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Editor & IDE
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===========================
+# Node.js / npm / yarn
+# ===========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+
+# ===========================
+# Environment & Secrets
+# ===========================
+.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+*.pem
+*.key
+
+# ===========================
+# React (Frontend Build)
+# ===========================
+client/build/
+client/dist/
+client/.next/
+client/.cache/
+
+# ===========================
+# Express / Node (Backend)
+# ===========================
+server/logs/
+logs/
+*.log
+
+# ===========================
+# MongoDB
+# ===========================
+*.db
+data/
+
+# ===========================
+# Build & Misc
+# ===========================
+dist/
+build/
+coverage/
+.nyc_output/
+*.bak
+*.tmp
