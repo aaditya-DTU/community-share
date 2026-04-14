@@ -82,6 +82,11 @@ const userSchema = new mongoose.Schema(
       default: false,
     },
 
+    avatar: {
+      type:    String,  // Cloudinary URL
+      default: null,
+    },
+
     isActive: {
       type:    Boolean,
       default: true,

@@ -6,18 +6,18 @@ import {
   getMyItems,
   updateItem,
   deleteItem,
+  deleteItemImage,
 } from "../controllers/itemController.js";
 import { protect } from "../middlewares/authMiddleware.js";
 
 const router = express.Router();
 
-// specific named routes BEFORE /:id to avoid route shadowing
-router.get("/nearby",   getNearbyItems);           // public
-router.get("/my-items", protect, getMyItems);      // private
-
-router.post("/",        protect, createItem);      // private
-router.get("/:id",      getItemById);              // public
-router.patch("/:id",    protect, updateItem);      // private (owner only)
-router.delete("/:id",   protect, deleteItem);      // private (owner only)
+router.get("/nearby",        getNearbyItems);
+router.get("/my-items",      protect, getMyItems);
+router.post("/",             protect, createItem);
+router.get("/:id",           getItemById);
+router.patch("/:id",         protect, updateItem);
+router.delete("/:id",        protect, deleteItem);
+router.delete("/:id/images", protect, deleteItemImage);
 
 export default router;
